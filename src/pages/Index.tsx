@@ -79,21 +79,6 @@ const Index = () => {
     )
   };
 
-  // Debug logs to trace categorization
-  console.log(`Cerro Otto in easy-mountain: ${trails.find(t => t.name === "Cerro Otto & Piedra de Habsburgo")?.category === 'easy-mountain'}`);
-  console.log(`Cerro Campanario in easy-mountain: ${trails.find(t => t.name === "Cerro Campanario")?.category === 'easy-mountain'}`);
-  console.log(`Mirador Lago Gutiérrez in easy-mountain: ${trails.find(t => t.name === "Mirador Lago Gutiérrez")?.category === 'easy-mountain'}`);
-  console.log(`Cerro San Martin in easy-mountain: ${trails.find(t => t.name === "Cerro San Martín")?.category === 'easy-mountain'}`);
-  console.log(`Cerro Llao Llao in easy-mountain: ${trails.find(t => t.name === "Cerro Llao Llao")?.category === 'easy-mountain'}`);
-  console.log(`Category hikes count for ${filters.selectedCategory}: ${categoryHikes.length}`);
-  
-  // Add debug for walking-path specific trails
-  const cascadaTrail = trails.find(t => t.name === "Cascada de los Duendes");
-  const llaoLlaoTrail = trails.find(t => t.name === "Cerro Llao Llao");
-  console.log(`Cascada de los Duendes in walking-path: ${cascadaTrail?.category === 'walking-path'}`);
-  console.log(`Cascada ID: ${cascadaTrail?.id}`);
-  console.log(`Cerro Llao Llao in walking-path: ${llaoLlaoTrail?.category === 'walking-path'}`);
-
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
