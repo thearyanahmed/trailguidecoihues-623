@@ -117,15 +117,11 @@ const Index = () => {
           </p>
         </header>
 
-        <Separator className={`${isMobile ? 'my-2' : 'my-4'} bg-[#B8BCC2] h-[1px] w-full shadow-sm`} />
-
         <CategoryFilter 
           selectedCategory={filters.selectedCategory}
           setSelectedCategory={filters.setSelectedCategory}
           setFiltersOpen={filters.setFiltersOpen}
         />
-
-        <Separator className={`${isMobile ? 'my-2' : 'my-4'} bg-[#B8BCC2] h-[1px] w-full shadow-sm`} />
 
         <FiltersDialog 
           open={filters.filtersOpen}
